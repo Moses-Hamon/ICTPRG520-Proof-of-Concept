@@ -1,35 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-#heading {
-border: 1px solid powderblue;
-vertical-align:top;
+    <style>
+        .logo {
+            position: relative;
+            padding-left: 35px;
+        }
+        #heading {
+            
+            vertical-align: top;
 
+        }
+        body{
+            background-color: lightgray;
+            width: 600px;
+            margin: auto;
+        }
+        form{
+            font: 1em sans-serif;
+            font-size: 18px;
+        }
+textarea{
+    resize: none;
+    width: 500px;
+    font-size: 14px;
+    background-color: blanchedalmond;
 }
-</style>
-<title>Laura's Landscaping</title>
+    </style>
+    <title>Laura's Landscaping</title>
 </head>
+
 <body>
-<div id="heading">
-<h1>Laura's Landscaping Survey</h1>
-<img src="Logo.jpg" alt="image not available" width="150" height="100">
+    <div id="heading">
+        <h1>Laura's Landscaping Survey</h1>
+        <img class="logo" src="Logo.jpg" alt="image not available" width="150" height="100">
 
-</div>
-<div>
-<h2> Please take the time to fill out survey</h2>
-</div>
-<div id="survey">
+    </div>
+    <div>
+        <h2> Please take the time to fill out survey</h2>
+    </div>
+    <div id="survey">
 
-<table>
-<tr>
-    <td></td>
-    <td><button type="button" onclick="alert('You Clicked the Button')">ALERT</button></td>
-    <td>Click on me :)</td>
-</tr>
-</table>
-</div>
-<p>This is a paragraph.</p>
+
+        <form class="survey" action="" style="align-self: center">
+
+            1. How would you rate the quality of work?
+            <br>
+            <input type="radio" name="workQuality" value="Poor">Poor
+            <input type="radio" name="workQuality" value="Ok">OK
+            <input type="radio" name="workQuality" value="Good">Good
+            <input type="radio" name="workQuality" value="Excellent">Excellent
+            <br>
+            <br> 2. How would you rate the quality of materials used?
+            <br>
+            <input type="radio" name="materialQuality" value="Poor">Poor
+            <input type="radio" name="materialQuality" value="Ok">OK
+            <input type="radio" name="materialQuality" value="Good">Good
+            <input type="radio" name="materialQuality" value="Excellent">Excellent
+            <br>
+            <br> 3. How would you rate the work and attitude of the person doing the work?
+            <br>
+            <input type="radio" name="attitude" value="Poor">Poor
+            <input type="radio" name="attitude" value="Ok">OK
+            <input type="radio" name="attitude" value="Good">Good
+            <input type="radio" name="attitude" value="Excellent">Excellent
+            <br>
+            <br>
+             4. How would you rate the overall service provided by our business?
+            
+            <br>
+            <input type="radio" name="serviceQuality" value="Poor">Poor
+            <input type="radio" name="serviceQuality" value="Ok">OK
+            <input type="radio" name="serviceQuality" value="Good">Good
+            <input type="radio" name="serviceQuality" value="Excellent">Excellent
+            <br>
+            <br> 5. Any Comments / Suggestions ?
+            <br>
+            <textarea rows="6" cols="50">Please enter and Comments or Suggestions into field.</textarea>
+        </form>
+    </div>
+    <p>This is a paragraph.</p>
 
 </body>
+
 </html>
