@@ -3,30 +3,41 @@
 
 <head>
     <style>
+        .frmbutton {
+            background-color: gray;
+            margin: 4px 3px;
+            font-size: 30px;
+
+        }
+
         .logo {
             position: relative;
             padding-left: 35px;
         }
+
         #heading {
-            
+
             vertical-align: top;
 
         }
-        body{
+
+        body {
             background-color: lightgray;
             width: 600px;
             margin: auto;
         }
-        form{
+
+        form {
             font: 1em sans-serif;
             font-size: 18px;
         }
-textarea{
-    resize: none;
-    width: 500px;
-    font-size: 14px;
-    background-color: blanchedalmond;
-}
+
+        textarea {
+            resize: none;
+            width: 500px;
+            font-size: 14px;
+            background-color: blanchedalmond;
+        }
     </style>
     <title>Laura's Landscaping</title>
 </head>
@@ -47,6 +58,7 @@ textarea{
 
             1. How would you rate the quality of work?
             <br>
+
             <input type="radio" name="workQuality" value="Poor">Poor
             <input type="radio" name="workQuality" value="Ok">OK
             <input type="radio" name="workQuality" value="Good">Good
@@ -54,6 +66,7 @@ textarea{
             <br>
             <br> 2. How would you rate the quality of materials used?
             <br>
+
             <input type="radio" name="materialQuality" value="Poor">Poor
             <input type="radio" name="materialQuality" value="Ok">OK
             <input type="radio" name="materialQuality" value="Good">Good
@@ -61,14 +74,14 @@ textarea{
             <br>
             <br> 3. How would you rate the work and attitude of the person doing the work?
             <br>
+
             <input type="radio" name="attitude" value="Poor">Poor
             <input type="radio" name="attitude" value="Ok">OK
             <input type="radio" name="attitude" value="Good">Good
             <input type="radio" name="attitude" value="Excellent">Excellent
             <br>
-            <br>
-             4. How would you rate the overall service provided by our business?
-            
+            <br> 4. How would you rate the overall service provided by our business?
+
             <br>
             <input type="radio" name="serviceQuality" value="Poor">Poor
             <input type="radio" name="serviceQuality" value="Ok">OK
@@ -78,6 +91,12 @@ textarea{
             <br> 5. Any Comments / Suggestions ?
             <br>
             <textarea rows="6" cols="50">Please enter and Comments or Suggestions into field.</textarea>
+            <br>
+            <div>
+                <button class="frmbutton" type="reset">Reset</button>
+                <button class="frmbutton" type="button">Submit</button>
+            </div>
+
         </form>
     </div>
     <p>This is a paragraph.</p>
